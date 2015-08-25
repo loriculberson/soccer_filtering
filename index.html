@@ -1,49 +1,46 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script language="javascript" type="text/javascript" src="sorting.js"></script>
   </head>
   
   <body>
 
   <div id="soccer-teams">
-    <button id="all active">All</button>
-    <button id="premier">Premier</button>
-    <button id="champs">Champs</button>
-    <button id="league1">League 1</button>
-    <button id="league2">League 2</button>
+    <button class='btn' id="all" data-type="all" data-role='team-button'>All</button>
+    <button class='btn' id="premier" data-type="premier" data-role='team-button'>Premier</button>
+    <button class='btn' id="champs" data-type="champs" data-role='team-button'>Champs</button>
+    <button class='btn' id="league1" data-type="league1" data-role='team-button'>League 1</button>
+    <button class='btn' id="league2" data-type="league2" data-role='team-button'>League 2</button>
   </div>
 
-<div id="all-teams">
-  <div class="team premier">
+  <div class="team premier" data-type="premier" data-role="team">
     <img src="images/accrington-stanley.jpg">
     <img src="images/cardiff-city.jpg">
     <img src="images/sunderland.jpg">
   </div>
 
-  <div class="team champs">
+  <div class="team champs" data-type="champs" data-role="team">
     <img src="images/arsenal.jpg">
     <img src="images/norwich-city.jpg">
     <img src="images/everton.jpg">
     <img src="images/sheffield-wednesday.jpg">
   </div>
 
-  <div class="team league1">  
+  <div class="team league1" data-type="league1" data-role="team">  
     <img src="images/aldershot.jpg">
     <img src="images/notts-county.jpg">
     <img src="images/watford.jpg">
     <img src="images/reading.jpg">
   </div> 
    
-   <div class="team league2">
+   <div class="team league2" data-type="league2" data-role="team">
     <img src="images/burton-albion.jpg">
     <img src="images/tottenham-hotspur.jpg">
     <img src="images/derby-county.jpg">
     <img src="images/morecambe.jpg">
   </div>
-</div>
-    
    
   </body>
 </html>
